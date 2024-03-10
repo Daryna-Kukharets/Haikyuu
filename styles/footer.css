@@ -1,0 +1,42 @@
+.footer {
+  background-color: #000;
+  position: relative;
+}
+
+.social-text {
+  color: #fff;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-img {
+  width: 30px;
+  transition: all 0.3s;
+}
+
+.social-img:hover {
+  transform: scale(1.1);
+}
+
+.social {
+  margin-top: 5px;
+}
+
+.copyright {
+  padding: 20px 0;
+  color: #b6b6b6;
+  text-align: center;
+}

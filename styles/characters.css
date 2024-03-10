@@ -1,0 +1,163 @@
+.characters {
+  background: linear-gradient(147deg, #191536 -0.5%, #000 99.5%);
+  padding: 100px 0 60px;
+}
+
+.video-container {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+
+#video-background,
+#video-background2,
+#video-background3,
+#video-background4 {
+  padding: 0 150px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(4px);
+}
+
+.video-bg {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 300px);
+  left: 150px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  filter: blur(4px);
+}
+
+.character-img {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+}
+
+.hinata-img {
+  height: 88%;
+}
+
+.kageyama-img {
+  height: 97%;
+}
+
+.tsuki-img {
+  height: 100%;
+}
+
+.daichi-img {
+  height: 100%;
+}
+
+.character-name {
+  position: absolute;
+  right: 250px;
+  top: -45px;
+  font-size: 100px;
+  color: transparent;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-align: right;
+}
+
+.name-hinata {
+  -webkit-text-stroke: 4px orange;
+}
+
+.name-kageyama {
+  -webkit-text-stroke: 4px blue;
+}
+.name-tsuki {
+  -webkit-text-stroke: 4px yellow;
+}
+
+.name-daichi {
+  -webkit-text-stroke: 4px #c23c02;
+}
+
+.audio {
+  display: none;
+}
+
+.voice {
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  right: 190px;
+  bottom: 10px;
+  transition: all 0.3s;
+}
+
+.voice:hover {
+  transform: scale(1.1);
+}
+
+.back-color {
+  background-color: green;
+}
+
+.table-ch {
+  position: absolute;
+  left: 600px;
+  bottom: 20px;
+}
+
+.th-ch {
+  text-align: left;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 25px;
+  font-style: italic;
+  border: 2px solid #fff;
+  color:#ddd;
+}
+
+.slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Плавний перехід для opacity та visibility */
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.prev,
+.next {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 40%;
+}
+
+.prev {
+  background-image: url(../images/icons/left.png);
+  left: 20px;
+}
+
+.next {
+  background-image: url(../images/icons/right.png);
+  right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,46 @@
+.news {
+  padding: 100px 0 60px;
+  background-color: #05040b;
+}
+
+.news-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+}
+
+.article {
+  width: 350px;
+  overflow: hidden;
+}
+
+.date {
+  font-weight: 900;
+  color: #b6b6b6;
+}
+
+.news-title {
+  padding: 10px 0;
+  color: #929292;
+}
+
+.news-title:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.img-wrap {
+  overflow: hidden;
+  height: 507px;
+}
+
+.news-img {
+  max-width: 100%;
+  height: 507px;
+  transition: transform 0.3s;
+}
+
+.news-img:hover {
+  transform: scale(1.1);
+}

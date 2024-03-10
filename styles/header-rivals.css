@@ -1,0 +1,90 @@
+.header-rivals {
+  background-color: #05040b;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 90px;
+  position: relative;
+
+}
+
+.team-img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 520px;
+}
+
+.team-name {
+  position: absolute;
+  left: 180px;
+  color: transparent;
+  font-style: italic;
+  font-size: 80px;
+}
+
+.team-fukurodani {
+  -webkit-text-stroke: 4px #ddd;
+}
+
+.team-nekoma {
+  -webkit-text-stroke: 4px #d40606;  
+}
+
+.team-aoba {
+  -webkit-text-stroke: 4px #02a682;
+}
+
+.symbol {
+  position: absolute;
+  height: 200px;
+  right: 100px;
+  top: 400px;
+}
+
+.slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Плавний перехід для opacity та visibility */
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.prev,
+.next {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s;
+  top: 250px;
+}
+
+.prev {
+  background-image: url(../images/icons/left.png);
+  left: 80px;
+}
+
+.next {
+  background-image: url(../images/icons/right.png);
+  right: 80px;
+}
+
+.prev:hover,
+.next:hover {
+  transform: scale(1.2);
+}

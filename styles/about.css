@@ -1,0 +1,64 @@
+.about-anime {
+  background: linear-gradient(147deg, #191536 -0.5%, #000 99.5%);
+  box-sizing: border-box;
+}
+
+.about {
+  padding: 100px 50px 0;
+}
+
+.about-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  grid-template-columns: auto auto; /* Розмір колонок автоматичний */
+  align-items: center;
+}
+
+.title {
+  color: transparent;
+  font-size: 60px;
+  -webkit-text-stroke: 1px #fff;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 30px;
+}
+
+.story {
+  color: #929292;
+  line-height: 150%;
+  height: min-content;
+}
+
+.story-bold {
+  font-weight: 900;
+  color: #b6b6b6;
+}
+
+.story-photo {
+  height: 430px;
+  display: block;
+  overflow: hidden;
+}
+
+.story-img {
+  height: 430px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+}
+
+.story-img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.story-br {
+  display: block; 
+  margin: 10px 0; 
+  content: "\00a0"; /* Додаємо пробіл для уникнення втрати видимості */
+}

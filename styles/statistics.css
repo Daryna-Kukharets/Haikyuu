@@ -1,0 +1,24 @@
+.statistics {
+  padding: 60px 50px;
+}
+
+.table-div {
+  padding-top: 20px;
+}
+
+.table-st {
+  width: 40%;
+  border-collapse: collapse;
+}
+
+.th-st,
+.td-st {
+  border: 2px solid #ddd;
+  color:#ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.th {
+  background-color: #474747;
+}

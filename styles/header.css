@@ -1,0 +1,71 @@
+.header {
+  background-image: url(../images/karasuno.png);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  margin-top: 5vh;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, #1d1d1d 0%, #ff6600 100%);
+  transition: top 0.3s;
+  display: flex;
+  z-index: 1;
+}
+
+.logo {
+  width: 150px;
+  padding-left: 50px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-item {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.nav-item:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}

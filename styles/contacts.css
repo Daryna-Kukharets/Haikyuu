@@ -1,0 +1,159 @@
+.contacts {
+  background-color: #05040b;
+  padding: 100px 100px 60px;
+}
+
+.input-box {
+  width: 100%;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 400px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #929292;
+  transition: all 0.3s;
+  cursor: text;
+}
+
+.placeholder:enabled {
+  bottom: 15px;
+}
+
+.textarea {
+  resize: none;
+}
+
+.textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+.input,
+.textarea {
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  position: relative;
+}
+
+.input:focus,
+.textarea:focus {
+  border-bottom: 1px solid blue;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  transform: translateY(-90%);
+  color: blue;
+}
+
+
+.legend {
+  color: #929292;
+  font-size: 14px;
+}
+
+.legend-select {
+  margin-top: -20px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.radio-choose {
+  display: flex;
+  gap: 50px;
+}
+
+.label-radio {
+  color: #929292;
+  font-size: 14px;
+}
+
+.select {
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.files {
+  padding-top: 5px;
+  color: #929292;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  color: #929292;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+.questions {
+  margin-top: -15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.quest {
+  margin-top: 5px;
+  color: #929292;
+  font-size: 14px;
+}
+
+.link {
+  margin-top: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-link {
+  color: #929292;
+  transition: all 0.3s;
+}
+
+.contact-link:hover {
+  color: #fff;
+}
